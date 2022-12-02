@@ -1,4 +1,6 @@
 import Banda from "./banda"
+import BandaDetail from "./bandaDetail"
+import {FormattedMessage} from 'react-intl';
 
 
 const { useEffect, useState } = require("react");
@@ -23,11 +25,12 @@ function Bandas(){
             <thead >
                 <tr>
                 <th scope="col">#</th>
-                <th scope="col">Nombre</th>
-                <th scope="col">Pais</th>
-                <th scope="col">Genero</th>
-                <th scope="col">Fundacion
+                <th scope="col"><FormattedMessage id = "Nombre"/></th>
+                <th scope="col"><FormattedMessage id = "Pais"/></th>
+                <th scope="col"><FormattedMessage id = "Genero"/></th>
+                <th scope="col"><FormattedMessage id = "Fundacion"/>
                 </th>
+                
 
                 </tr>
 

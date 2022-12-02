@@ -1,4 +1,5 @@
 
+import Card from 'react-bootstrap/Card';
 
 function BandaDetail(props){
 	return (
@@ -16,3 +17,4 @@ function BandaDetail(props){
 
 
 }
+export default BandaDetail;
