@@ -4,7 +4,7 @@ import BandaDetail from "./bandaDetail";
 
 function detail(props){
     
-    return(<BandaDetail banda = {props.banda}/>);
+    return(<BandaDetail banda = {props}/>);
     
 }
 
@@ -19,7 +19,7 @@ const Banda = (props) => {
             <td>{props.banda.country}</td>
             <td>{props.banda.genre}</td>
             <td>{props.banda.foundation_year}</td>
-            <td><button onClick={detail(props)}>Detail</button></td>
+            <td><button onClick={detail(props.banda)}>Detail</button></td>
             {/* <Link onClick={detail(props)}>Link</Link> */}
       
         </tr>
